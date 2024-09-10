@@ -5,6 +5,17 @@ body {
     color: black;
 }
 
+.pagecpf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #CFE9F6;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -16,6 +27,24 @@ body {
     background-color: #CFE9F6;
 }
 
+.pagecnpj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ADD4DB;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+}
+
+
+
 .formLogin {
     display: flex;
     flex-direction: column;
@@ -26,6 +55,23 @@ body {
     gap: 5px;
 }
 
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+
+.button{
+    display: flex;
+
+}
+
+
+.button-text{
+    justify-content: center;
+}
 .formLogin p {
     display: inline-block;
     font-size: 14px;
