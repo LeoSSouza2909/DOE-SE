@@ -130,5 +130,5 @@ Manter uma estrutura de pastas organizada e seguir convenções de nomenclatura 
 
 ---
 
-<div align="center">Documentação por feita com 💜 por <a href="https://github.com/andressa-l">Andressa Lima</a>.</div>
+<div align="center">Documentação feita com 💜 por <a href="https://github.com/andressa-l">Andressa Lima</a>.</div>
 <br />
