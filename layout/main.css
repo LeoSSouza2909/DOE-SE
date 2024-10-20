@@ -137,3 +137,14 @@ body {
     margin-top: 15px;
     padding-right: 30px;
 }
+
+.fa-x {
+    position: absolute;
+    right: 580px;
+    width: 32px;
+    height: 32px;
+}
+
+.fa-x:hover {
+    opacity: 1;
+}
