@@ -57,22 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
     autoplay();
 });
 
-//Exibindo e escondendo modal
-
-var modal = document.getElementById("login-modal");
-var btn = document.getElementById("btn-login");
-var span = document.getElementsByClassName("close-modal")[0];
-//Exibe ao clicar em "Login"
-btn.onclick = function() {
-    modal.style.display = "flex";
-}
-//Esconde ao clicar no X
-span.onclick = function() {
-    modal.style.display = "none";
-}
-//Esconde ao clicar fora da modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+function toggleAnswer(index) {
+    const answers = document.querySelectorAll('.answer-one, .answer-two');
+    
+    answers.forEach((answer, i) => {
+        if (i === index) {
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    });
 }
