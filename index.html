@@ -195,7 +195,7 @@
             <p>&copy; 2024 DOE-SE. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    
     <!-- Modal de login display none by default -->
 
     <div class="pagecpf hidden" id="login-modal">
@@ -225,11 +225,21 @@
 
     <!-- Modal de Conta -->
     <div class="pagecpf hidden" id="account-modal">
-        <form class="formLogin">
-            <span class="close-modal">&times;</span>
-            <h1>Minha Conta</h1>
-            <p id="account-details"></p>
-        </form>
+        <div class="card">
+            <div class="profile">
+                <img src="../assets/images/userprofile.jpg" alt="perfil" class="profile-img">
+                <h1>Nome</h1>
+                <h3>DOADOR OU BENEFICIÁRIO</h3>
+                <h4 style="color: rgb(93, 92, 92);">user@exemplo.com</h4>
+            </div>
+            <div class="profile-options">
+                <button class="btn btn-profile">Meus Dados</button>
+                <button class="btn btn-profile">Minhas Campanhas</button>
+                <button class="btn btn-profile">Criar Campanha</button>
+                <button class="btn btn-profile">Doações</button>
+                <button class="btn btn-profile">Configurações</button>
+            </div>
+        </div> 
     </div>
 
     <!-- Modal de Escolha de Cadastro -->
