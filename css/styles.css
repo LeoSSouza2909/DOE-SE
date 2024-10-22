@@ -209,23 +209,113 @@ form button:hover {
 }
 
 footer {
-    /* color: #000000;
-    text-align: center;
-    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 3px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: url('assets/images/imagem-footer.png');
-    width: 100%; */
-    background-color: #CCE0D5;
-    color: #333;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6f61;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ff6f61;
+}
+
+.footer-section img {
+    width: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-section form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-section input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+}
+
+.footer-section button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #e65c53;
+}
+
+.footer-bottom {
     text-align: center;
-    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.footer-section .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    color: #ff6f61;
 }
 
 .containerUser {
