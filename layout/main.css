@@ -22,6 +22,48 @@ body {
     display: none;
 }
 
+.profile-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-menu i {
+    font-size: 24px;
+    color: #333;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    width: 150px;
+}
+
+.dropdown li {
+    margin-bottom: 10px;
+}
+
+.dropdown li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.2s;
+}
+
+.dropdown a:hover {
+    background-color: #f5f5f5;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -49,20 +91,6 @@ body {
     display: flex;
 }
 
-.formLogin {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 7px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 400px;
-    position: relative;
-
-    
-}
-
 .icon {
     width: 50px;
     height: 50px;
@@ -77,6 +105,27 @@ body {
 .button-text{
     justify-content: center;
 }
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+
+    
+}
+
+.formLogin h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
 .formLogin p {
     display: inline-block;
     font-size: 14px;
@@ -92,6 +141,8 @@ body {
     border-radius: 4px;
     outline: none;
     transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .formLogin input:focus {
@@ -106,7 +157,11 @@ body {
     font-size: 14px;
     color: #666;
     align-self: flex-start;
-} 
+}
+
+.formLogin button {
+    margin-bottom: 10px;
+}
 
 .formLogin a {
     font-size: 13px;
@@ -114,16 +169,34 @@ body {
     margin-bottom: 15px;
     text-decoration: none;
     transition: color 0.2s;
+    display: block;
+    text-align: center;
 }
 
 .formLogin a:hover {
     color: #f72585;
 }
 
-.formLogin h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    text-align: center;
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn-back {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    width: 48%;
+}
+
+.btn-back:hover {
+    background-color: #bbb;
 }
 
 .btn_submit {
@@ -136,6 +209,7 @@ body {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.2s;
+    width: 100%;
 }
 
 .btn_submit:hover {
