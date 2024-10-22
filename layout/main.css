@@ -54,14 +54,13 @@ body {
     flex-direction: column;
     background-color: #fff;
     border-radius: 7px;
-    padding: 45px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    gap: 5px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
     position: relative;
-}
 
-form label {
-    margin-left: -40vh;
+    
 }
 
 .icon {
@@ -69,8 +68,6 @@ form label {
     height: 50px;
     margin: 10px;
 }
-
-
 
 .button{
     display: flex;
@@ -88,43 +85,61 @@ form label {
 }
 
 .formLogin input {
-    padding: 15px;
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: 15px;
     border-radius: 4px;
-    transition: all linear 160ms;
     outline: none;
+    transition: border-color 0.2s;
 }
 
 .formLogin input:focus {
-    border: 1px solid #f72585;
+    border-color: #f72585;
 }
 
 .formLogin label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
     font-size: 14px;
-    font-weight: 600px;
-}
+    color: #666;
+    align-self: flex-start;
+} 
 
 .formLogin a {
-    display: inline-block;
-    margin-bottom: 20px;
     font-size: 13px;
     color: #555;
-    transition: all linear 160ms;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: color 0.2s;
 }
 
 .formLogin a:hover {
     color: #f72585;
 }
 
+.formLogin h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
 .btn_submit {
-    background-color: #F8F8FF;
+    background-color: #2F4F4F;
+    color: #fff;
+    border: none;
+    padding: 10px;
     font-size: 14px;
-    font-weight: 600;
-    transition: all linear 160ms;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn_submit:hover {
+    background-color: #1E3D3D;
 }
 
 .navBar {
@@ -149,9 +164,9 @@ form label {
 .close-modal {
     color: #aaa;
     position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 28px;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
     cursor: pointer;
 }
 
