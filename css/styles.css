@@ -334,7 +334,7 @@ footer {
 
 .card {
     width: 640px;
-    background-color: rgba(176, 201, 194, .5);
+    background-image: linear-gradient(#fafafa, #CCE0D5) ;
     height: 500px;
     border-radius: 16px;
     display: flex;
@@ -365,7 +365,7 @@ footer {
     justify-content: space-around;
 }
 
-.profile-options input {
+.btn-profile {
     width: 200px;
     padding: 15px;
     font-size: 14px;
