@@ -232,6 +232,7 @@ footer {
     flex: 1;
     margin: 10px;
     min-width: 200px;
+    /* text-align: center; */
 }
 
 .footer-section h4 {
@@ -310,6 +311,10 @@ footer {
     border-top: 1px solid #555;
     padding-top: 10px;
     font-size: 13px;
+}
+
+.social-icons {
+    text-align: center;
 }
 
 .footer-section .social-icons a {
