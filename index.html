@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="layout/main.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">Doe-SE</h1>
+            <h1 class="logo"><a href="#">Doe-SE</a></h1>
             <nav>
                 <button class="hamburger" id="hamburger">
                     <span></span>
@@ -29,7 +32,16 @@
                     <li><a href="#campaigns">Campanhas</a></li>
                     <li><a href="#question">Perguntas</a></li>
                     <li><a href="#contact">Contato</a></li>
-                    <li><button class="btn-login" id="btn-login" style="font-family: 'Roboto Mono', 'Open Sans', sans-serif;">Login</button></li>
+                    <li><button class="btn-login" id="btn-login"
+                            style="font-family: 'Roboto Mono', 'Open Sans', sans-serif;">Login</button>
+                    </li>
+                    <li class="profile-menu hidden" id="profile-menu">
+                        <i class="fas fa-user-circle" id="profile-icon"></i>
+                        <ul class="dropdown hidden" id="profile-dropdown">
+                            <li><a href="#" id="account-link">Conta</a></li>
+                            <li><a href="#" id="logout-link">Sair</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -39,7 +51,9 @@
         <section id="about" class="about section">
             <div class="container">
                 <h2 class="animate__animated animate__fadeInUp">Sobre Nós</h2>
-                <p class="animate__animated animate__fadeInUp">Somos uma organização dedicada a apoiar diversas causas sociais, trabalhando para melhorar a vida de pessoas ao redor do mundo. Com a sua ajuda, podemos alcançar mais pessoas e fazer uma diferença real.</p>
+                <p class="animate__animated animate__fadeInUp">Somos uma organização dedicada a apoiar diversas causas
+                    sociais, trabalhando para melhorar a vida de pessoas ao redor do mundo. Com a sua ajuda, podemos
+                    alcançar mais pessoas e fazer uma diferença real.</p>
             </div>
         </section>
 
@@ -50,61 +64,71 @@
                     <button class="glider-prev">«</button>
                     <div class="glider">
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Educação</h3>
                             <p>Apoie projetos educacionais que oferecem oportunidades para crianças e adultos.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Saúde</h3>
                             <p>Contribua para iniciativas que melhoram o acesso à saúde em comunidades carentes.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Educação</h3>
                             <p>Apoie projetos educacionais que oferecem oportunidades para crianças e adultos.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Saúde</h3>
                             <p>Contribua para iniciativas que melhoram o acesso à saúde em comunidades carentes.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Educação</h3>
                             <p>Apoie projetos educacionais que oferecem oportunidades para crianças e adultos.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Saúde</h3>
                             <p>Contribua para iniciativas que melhoram o acesso à saúde em comunidades carentes.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Educação</h3>
                             <p>Apoie projetos educacionais que oferecem oportunidades para crianças e adultos.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Saúde</h3>
                             <p>Contribua para iniciativas que melhoram o acesso à saúde em comunidades carentes.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Educação</h3>
                             <p>Apoie projetos educacionais que oferecem oportunidades para crianças e adultos.</p>
                             <button class="btn">Saiba Mais</button>
                         </div>
                         <div class="campaign">
-                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação" class="campaign-image">
+                            <img src="assets/images/imagem-campanha-rs.png" alt="Imagem da Campanha de Educação"
+                                class="campaign-image">
                             <h3>Campanha de Saúde</h3>
                             <p>Contribua para iniciativas que melhoram o acesso à saúde em comunidades carentes.</p>
                             <button class="btn">Saiba Mais</button>
@@ -118,7 +142,7 @@
 
         <section id="question" class="question section">
             <div class="container">
-            <h2>Perguntas</h2>
+            <h2>Dúvidas</h2>
             <div class="question-box">
                 <div class="col-one">
                     <div class="box-one">
@@ -259,33 +283,114 @@
             </div>
             <div class="footer-section">
                 <h4>Missão e Visão</h4>
-                <p>Trabalhamos para apoiar causas sociais e melhorar a vida de pessoas ao redor do mundo. Com a sua ajuda, podemos fazer uma diferença real.</p>
+                <p>Trabalhamos para apoiar causas sociais e melhorar a vida de pessoas ao redor do mundo. Com a sua
+                    ajuda, podemos fazer uma diferença real.</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 DOE-SE. Todos os direitos reservados.</p>
         </div>
     </footer>
+    
+    <!-- Modal de login display none by default -->
 
-   <!-- Modal de login display none by default -->
-     
-   <div class="pagecpf hidden" id="login-modal">
+    <div class="pagecpf hidden" id="login-modal">
         <form method="post" class="formLogin">
             <span class="close-modal">&times;</span>
             <h1>Login</h1>
             <p>Digite seus dados de acesso nos campos abaixo:</p>
             <label for="email">Email</label>
-            <input type="email" placeholder="Digite seu email" autofocus="true">
+            <input type="email" id="login-email" placeholder="Digite seu email" autofocus="true">
             <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha">
+            <input type="password" id="login-password" placeholder="Digite sua senha">
+            <button type="button" class="btn_submit" id="login-submit">Acessar</button>
+            <p>OU</p>
+            <button class="btn btn-facebook login-btn" style="background-color:#3b5998;">
+                <i class="fab fa-facebook-f"></i> Continue com Facebook
+              </button>
+              <button class="btn btn-google login-btn" style="background-color:#4285f4;">
+                <i class="fab fa-google"></i> Continue com Google
+              </button>
+              <button class="btn btn-instagram login-btn" style="background-color:#8e305d;">
+                <i class="fab fa-instagram"></i> Continue com Instagram
+              </button>
             <a href="#">Esqueceu sua senha?</a>
-            <input type="button" value="Acessar" class="btn_submit">
-            <a href="#">Cadastre-se</a>
+            <p>Não tem uma conta? <a href="#" id="register-link">Cadastre-se</a></p>
         </form>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Modal de Conta -->
+    <div class="pagecpf hidden" id="account-modal">
+        <div class="card">
+            <div class="profile">
+                <img src="../assets/images/userprofile.jpg" alt="perfil" class="profile-img">
+                <h1>Nome</h1>
+                <h3>DOADOR OU BENEFICIÁRIO</h3>
+                <h4 style="color: rgb(93, 92, 92);">user@exemplo.com</h4>
+            </div>
+            <div class="profile-options">
+                <button class="btn btn-profile">Meus Dados</button>
+                <button class="btn btn-profile">Minhas Campanhas</button>
+                <button class="btn btn-profile">Criar Campanha</button>
+                <button class="btn btn-profile">Doações</button>
+                <button class="btn btn-profile">Configurações</button>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Modal de Escolha de Cadastro -->
+    <div class="pagecpf hidden" id="register-choice-modal">
+        <form class="formLogin">
+            <span class="close-modal">&times;</span>
+            <h1>Escolha o Tipo de Cadastro</h1>
+            <button type="button" id="register-pf" class="btn_submit">Pessoa Física</button>
+            <button type="button" id="register-pj" class="btn_submit">Pessoa Jurídica</button>
+        </form>
+    </div>
+
+    <!-- Modal de Cadastro Pessoa Física -->
+    <div class="pagecpf hidden" id="register-pf-modal">
+        <form class="formLogin">
+            <span class="close-modal">&times;</span>
+            <h1>Cadastro Pessoa Física</h1>
+            <label for="pf-name">Nome Completo</label>
+            <input type="text" id="pf-name" placeholder="Digite seu nome completo" required>
+            <label for="pf-email">Email</label>
+            <input type="email" id="pf-email" placeholder="Digite seu email" required>
+            <label for="pf-cpf">CPF</label>
+            <input type="text" id="pf-cpf" placeholder="Digite seu CPF" required>
+            <label for="pf-password">Senha</label>
+            <input type="password" id="pf-password" placeholder="Crie uma senha" required>
+            <div class="button-group">
+                <button type="button" class="btn-back" id="back-to-choice-pf">Voltar</button>
+                <button type="submit" class="btn_submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal de Cadastro Pessoa Jurídica -->
+    <div class="pagecpf hidden" id="register-pj-modal">
+        <form class="formLogin">
+            <span class="close-modal">&times;</span>
+            <h1>Cadastro Pessoa Jurídica</h1>
+            <label for="pj-name">Nome da Empresa</label>
+            <input type="text" id="pj-name" placeholder="Digite o nome da empresa" required>
+            <label for="pj-email">Email</label>
+            <input type="email" id="pj-email" placeholder="Digite o email da empresa" required>
+            <label for="pj-cnpj">CNPJ</label>
+            <input type="text" id="pj-cnpj" placeholder="Digite o CNPJ" required>
+            <label for="pj-password">Senha</label>
+            <input type="password" id="pj-password" placeholder="Crie uma senha" required>
+            <div class="button-group">
+                <button type="button" class="btn-back" id="back-to-choice-pj">Voltar</button>
+                <button type="submit" class="btn_submit">Cadastrar</button>
+            </div>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
+
 </html>
