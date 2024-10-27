@@ -57,6 +57,18 @@ document.addEventListener('DOMContentLoaded', function() {
     autoplay();
 });
 
+function toggleAnswer(index) {
+    const answers = document.querySelectorAll('.answer-one, .answer-two');
+    
+    answers.forEach((answer, i) => {
+        if (i === index) {
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const btnLogin = document.getElementById('btn-login');
     const registerLink = document.getElementById('register-link');
@@ -155,3 +167,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+

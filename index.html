@@ -30,6 +30,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#campaigns">Campanhas</a></li>
+                    <li><a href="#question">Perguntas</a></li>
                     <li><a href="#contact">Contato</a></li>
                     <li><button class="btn-login" id="btn-login"
                             style="font-family: 'Roboto Mono', 'Open Sans', sans-serif;">Login</button>
@@ -137,6 +138,101 @@
                     <div role="tablist" class="dots"></div>
                 </div>
             </div>
+        </section>
+
+        <section id="question" class="question section">
+            <div class="container">
+            <h2>Dúvidas</h2>
+            <div class="question-box">
+                <div class="col-one">
+                    <div class="box-one">
+                        <p>Quem pode doar?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(0)">⌄</button>
+                    </div>
+                    <div class="answer-one" id="answer-0">
+                        <p>Qualquer pessoa pode doar, desde que siga os requisitos da campanha.</p>
+                    </div>
+                    <div class="box-one">
+                        <p>Como a doação pode ser feita?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(1)">⌄</button>
+                    </div>
+                    <div class="answer-one" id="answer-1">
+                        <p><b>Doação de itens físicos:</b> Leve roupas, brinquedos, alimentos e outros itens a um ponto de coleta ou organização.<br>
+                           <b>Doação financeira:</b> Contribua com dinheiro via PIX ou boleto para apoiar as atividades da organização..</p>
+                    </div>
+                    <div class="box-one">
+                        <p>O que se pode doar?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(2)">⌄</button>
+                    </div>
+                    <div class="answer-one" id="answer-2">
+                        <p><b>Doações em Dinheiro</b><br>
+                            <b>Transferência Bancária:</b> As empresas podem fazer doações diretas para organizações sem fins lucrativos ou projetos sociais, utilizando transferências bancárias convencionais.<br>
+                            <b>PIX:</b> Essa forma de pagamento se tornou muito popular pela agilidade. As empresas podem realizar doações instantâneas, facilitando o apoio a causas emergenciais.<br>
+                            <b>Doações de Itens</b><br>
+                            <b>Produtos:</b> Muitas empresas doam produtos que já fabricam, como alimentos, roupas, produtos de higiene ou equipamentos. Essa prática não só ajuda a comunidade, mas também pode gerar uma boa imagem para a marca.<br>
+                            <b>Equipamentos:</b> Doações de equipamentos, como computadores, móveis e ferramentas, podem ser muito úteis para escolas, ONGs e instituições que precisam de recursos.</p>
+                    </div>
+                    <div class="box-one">
+                        <p>Quais são as formas de pagamento?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(3)">⌄</button>
+                    </div>
+                    <div class="answer-one" id="answer-3">
+                        <p>Aceitamos doações via PIX e boleto.</p>
+                    </div>
+                </div>
+                
+                <div class="col-two"> 
+                    <div class="box-two">
+                        <p>Pode desistir da doação?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(4)">⌄</button>
+                    </div>
+                    <div class="answer-two" id="answer-4">
+                        <p>Sim, você pode desistir da doação a qualquer momento, bastando informar a organização responsável. É importante comunicar para que possamos gerenciar adequadamente as contribuições.</p>
+                    </div>
+                    <div class="box-two">
+                        <p>Como as doações são entregues?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(5)">⌄</button>
+                    </div>
+                    <div class="answer-two" id="answer-5">
+                        <p>As doações podem ser realizadas por meio de envio pelos Correios ou por transportadora.</p>
+                    </div>
+                    <div class="box-two">
+                        <p>Por onde serão feitas as doações?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(6)">⌄</button>
+                    </div>
+                    <div class="answer-two" id="answer-6">
+                        <p><b>Acesse o site:</b> Visite a página da organização que você deseja apoiar.<br>
+
+                            <b>Encontre a seção de doações:</b> Procure por um link ou botão que indique “Doe” ou “Contribua”.<br>
+                            
+                            <b>Escolha o tipo de doação:</b> Você pode optar por fazer uma doação financeira ou de itens.<br>
+                            
+                            <b>Para doações financeiras:</b><br>
+
+                            <b>Preencha os dados:</b> Informe o valor da doação e os dados de pagamento (como PIX ou boleto).<br>
+
+                            <b>Confirme a doação:</b> Revise as informações e confirme a transação.<br>
+
+                            <b>Receba um recibo:</b> Após a doação, você geralmente receberá um e-mail de confirmação ou recibo.<br>
+
+                            <b>Para doações de itens:</b><br>
+                            
+                            <b>Verifique a lista de itens aceitos:</b> Acesse a seção que informa quais itens podem ser doados.<br>
+
+                            <b>Localize o ponto de coleta:</b> Encontre informações sobre onde levar os itens ou se há a opção de solicitação de retirada.<br>
+
+                            <b>Prepare os itens:</b> Certifique-se de que os itens estejam limpos e em bom estado.</p>
+                    </div>
+                    <div class="box-two">
+                        <p>Quem pode criar campanhas?</p>
+                        <button class="button-arrow" onclick="toggleAnswer(7)">⌄</button>
+                    </div>
+                    <div class="answer-two" id="answer-7">
+                        <p>Só as empresas podem criar campanhas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
 
         <section id="contact" class="contact section">
